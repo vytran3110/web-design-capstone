@@ -1,0 +1,147 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+}
+
+h1, h2{
+    text-align: center;
+    margin: 8px;
+    padding: 8px 8px;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 48px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav{
+    display: block;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    border-bottom: 1px solid #dee0df;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 20px;
+    margin: 4px;
+}
+
+footer{
+    font-size: 13px;
+    text-align: center;
+    padding: 12px;
+    margin: 48px;
+}
+
+
+p{
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    line-height: 125%;
+}
+
+.recipe-card-head{
+    display: block;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    background-color: #112942;
+    color: #fff;
+    padding: 16px 36px;
+}
+
+
+.recipe-card-head img{
+    border-radius: 100%;
+    border: 3px solid  #112942;
+    width: 206px;
+    height: 206px;
+    object-fit: cover;
+    position: relative;
+    top: -50px;
+    justify-items: center;
+}
+
+.recipe-body{
+    display: block;
+    width: 50%;
+    margin: auto;
+    background-color: #f6f5f3;
+    padding: 16px 36px;
+}
+
+
+
+.recipe-ingredients, .recipe-steps{
+    display: block;
+    justify-content: center;
+    text-align: left;
+    line-height: 150%;
+    padding: 20px 0px;
+}
+
+ol{
+    padding-top: 20px;
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+.recipe-ingredients ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ol li, ul li{
+    padding: 10px 0px 0px 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 240px 240px 240px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+    column-gap: 16px;
+    width: 50%;
+    margin: auto;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 75%;
+    transition-property: all;
+    filter: none;
+    transition-duration: 0.5s;
+}
+
+.grid img:nth-child(1),
+.grid img:nth-child(7){
+    grid-column: span 2;
+}
+
+.grid img:hover{
+    filter: grayscale(100%);
+    border-radius: 16px;
+}
